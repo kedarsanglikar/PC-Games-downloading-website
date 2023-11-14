@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2023 at 01:56 PM
+-- Generation Time: Nov 14, 2023 at 02:30 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -20,43 +20,16 @@ SET time_zone = "+00:00";
 --
 -- Database: `gameweb`
 --
+CREATE DATABASE IF NOT EXISTS `gameweb` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `gameweb`;
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `feedbacks`
 --
-
-CREATE TABLE `feedbacks` (
-  `Name` varchar(255) NOT NULL,
-  `Email` varchar(255) NOT NULL,
-  `Message` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `feedbacks`
---
-
-INSERT INTO `feedbacks` (`Name`, `Email`, `Message`) VALUES
-('Akshay', 'kedarsanglikar26@gmail.com', 'Hello'),
-('Akshay', 'kedarsanglikar26@gmail.com', 'Hello'),
-('Akshay', 'abc@gmail.com', 'Hello'),
-('Kedar Sanglikar', 'xyz@gmail.com', 'This is a good and excellent website to download and play games for relaxing. Thank you'),
-('Kedar Sanglikar', 'xyz@gmail.com', 'This is a good and excellent website to download and play games for relaxing. Thank you'),
-('Kedar Sanglikar', 'xyz@gmail.com', 'This is a good and excellent website to download and play games for relaxing. Thank you'),
-('Xyz', 'abc@gmail.com', 'Hi'),
-('Akshay', 'abc@gmail.com', 'Hello world'),
-('Rohan', 'xyz@gmail.com', 'Hi there'),
-('Akshay', 'xyz@gmail.com', 'hiy'),
-('abhi', 'xyz@gmail.com', 'ajvdasd'),
-('sdf', 'sfsdf@gmail', 'sdfsdf'),
-('Kedar Sanglikar', 'abc@gmail.com', 'There'),
-('kunal', 'kunal@gmail.com', 'to downloading '),
-('ganesh nikam', 'customer2@gmail.com', 'hf'),
-('ganesh', 'abc@gmail.com', 'game downloading problem'),
-('kuhnal', 'abc@gmail.com', 'affa'),
-('Akshay', 'abc@gmail.com', 'a'),
-('kunal chavan', 'kunal@gmail.com', 'gane downloading problem');
+-- Error reading structure for table gameweb.feedbacks: #1932 - Table &#039;gameweb.feedbacks&#039; doesn&#039;t exist in engine
+-- Error reading data for table gameweb.feedbacks: #1064 - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near &#039;FROM `gameweb`.`feedbacks`&#039; at line 1
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
